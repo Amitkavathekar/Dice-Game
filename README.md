@@ -1,12 +1,44 @@
-# React + Vite
+# Dice Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Dice Game project built with React and Vite! This is a simple number guessing and dice rolling game.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Select a number between 1 and 6
+- Roll the dice to test your luck
+- Score increases by the dice value if your selection matches the dice
+- Score decreases by 1 if your selection does not match
+- Option to reset your score
+- Show or hide the game rules
 
-## Expanding the ESLint configuration
+## How to Run
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repo:
+   ```
+   git clone <repo-link>
+   cd <project-folder>
+   ```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start the dev server:
+   ```
+   npm run dev
+   ```
+
+## Technologies Used
+
+- React
+- Vite
+- Tailwind CSS
+
+## Game Rules
+
+1. Pick any number from 1 to 6.
+2. Hit "Roll Dice".
+3. If the dice matches your selected number, you'll get the points equal to the dice number.
+4. If not, 1 point will be subtracted from your score.
+5. You can reset the score any time.
+
+Enjoy the game!

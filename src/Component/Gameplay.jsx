@@ -44,8 +44,17 @@ const Gameplay = () => {
   };
 
   return (
-    <div className="w-9/12 h-8/12 m-auto mt-2">
-      <div className="flex justify-between">
+    <div
+      className="
+        w-9/12 h-8/12 m-auto mt-2
+        max-[480px]:w-11/12 max-[480px]:h-auto   /* Small mobile */
+        sm:w-10/12 sm:h-7/12                    /* Big phones */
+        md:w-8/12 md:h-6/12                     /* Tablet */
+        lg:w-7/12 lg:h-6/12                     /* Laptop */
+        xl:w-6/12 xl:h-5/12                     /* Desktop */
+      "
+    >
+      <div className="flex justify-between flex-wrap">
         <TotalScore score={score} />
         <NumberSelector
           error={error}
@@ -70,6 +79,7 @@ const Gameplay = () => {
         />
       </div>
 
+      {/* Responsive info removed */}
       {rules && <Rules />}
     </div>
   );
