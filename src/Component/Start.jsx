@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import diceImg from "../assets/dices 1.png";
 
 const Start = () => {
   return (
@@ -24,7 +25,7 @@ const Start = () => {
           lg:w-[625px] lg:h-[522px]
           xl:w-[700px] xl:h-[558px]
         "
-        src="/src/assets/dices 1.png"
+        src={diceImg}
         alt="Dice"
       />
 
